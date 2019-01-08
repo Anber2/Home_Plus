@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_prop"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:orientation="vertical"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/dialog_fragment_bg">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Property Address"
+            android:layout_marginLeft="10dp"
+            android:textSize="14dp"
+            android:textAppearance="@style/TextAppearance.FontPath.segoeuib"
+            android:textColor="@android:color/black"/>
+        <Button
+            android:id="@+id/btnCloseInDialog"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:text="X"
+            android:textColor="#FFF"
+            android:background="@drawable/close_button"
+            android:layout_gravity="end|right"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_margin="5dp"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+              android:gravity="left"
+               >
+                <TextView
+                    android:id="@+id/txtRegion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+
+                    android:text="@string/txt_property_block"
+                    android:textAppearance="@style/TextAppearance.FontPath.segoeuib"
+                    android:textColor="@android:color/black"/>
+                <TextView
+                    android:id="@+id/txtpropertyregionValuenw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                  android:gravity="left"
+                    android:layout_marginLeft="5dp"
+                    style="@style/autoscrollText"
+                    android:textAppearance="@style/TextAppearance.FontPath.segoeuib"
+                    android:textColor="@android:color/black"
+                    android:layout_above="@+id/txtEmail" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="left"
+                >
+                <TextView
+                    android:id="@+id/txtblock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+
+                    android:text="@string/txt_property_Block"
+                    android:textAppearance="@style/TextAppearance.FontPath.segoeuib"
+                    android:textColor="@android:color/black"/>
+                <TextView
+                    android:id="@+id/txtblockvalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_marginLeft="5dp"
+                    style="@style/autoscrollText"
+                    android:textAppearance="@style/TextAppearance.FontPath.segoeuib"
+                    android:textColor="@android:color/black"
+                    android:layout_above="@+id/txtEmail" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="left"
+                >
+                <TextView
+                    android:id="@+id/txtEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+
+                    android:text="@string/txt_property_street"
+                    android:textAppearance="@style/TextAppearance.FontPath.segoeuib"
+                    android:textColor="@android:color/black"
+
+                  />
+                <TextView
+                    android:id="@+id/txtpropertystreetValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    style="@style/autoscrollText"
+                    android:layout_marginLeft="5dp"
+                    android:textAppearance="@style/TextAppearance.FontPath.segoeuib"
+                    android:textColor="@android:color/black"
+                    android:layout_above="@+id/txtEmail" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="left"
+                >
+                <TextView
+                    android:id="@+id/txtavenue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+
+                    android:text="@string/txt_property_avenue"
+                    android:textAppearance="@style/TextAppearance.FontPath.segoeuib"
+                    android:textColor="@android:color/black"
+
+                    />
+                <TextView
+                    android:id="@+id/txtpropertyaddressValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    style="@style/autoscrollText"
+                    android:layout_marginLeft="5dp"
+                    android:textAppearance="@style/TextAppearance.FontPath.segoeuib"
+                    android:textColor="@android:color/black"
+                    android:layout_above="@+id/txtEmail" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="left"
+                >
+                <TextView
+                    android:id="@+id/txtHouse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+
+                    android:text="@string/txt_property_house"
+                    android:textAppearance="@style/TextAppearance.FontPath.segoeuib"
+                    android:textColor="@android:color/black"
+
+                    />
+                <TextView
+                    android:id="@+id/txtpropertyhousevalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.FontPath.segoeuib"
+                    android:gravity="left"
+                    android:layout_marginLeft="5dp"
+                    style="@style/autoscrollText"
+                    android:textColor="@android:color/black"
+                    android:layout_above="@+id/txtEmail" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    <!--<RelativeLayout
+
+        android:id="@+id/relativeOwnerDetailsLay"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:paddingLeft="10dp"
+        android:gravity="center"
+        >
+
+        <View
+            android:id="@+id/basic_view"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txtNationality"
+            android:layout_marginLeft="60dp"
+        />
+
+        <TextView
+            android:id="@+id/txtPhoneNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_marginRight="20dp"
+            android:layout_alignParentLeft="true"
+            android:text="@string/txt_property_block"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:id="@+id/txtColonFirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_toRightOf="@+id/txtPhoneNo"
+            android:text=":"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:id="@+id/txtpropertyblockValuenw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtColonFirst"
+            android:text="saaasdasdasfsad"
+            android:layout_marginLeft="20dp"
+            style="@style/autoscrollText"
+
+            android:textColor="@android:color/black"
+            android:layout_above="@+id/txtEmail" />
+
+        <TextView
+            android:id="@+id/txtEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txtPhoneNo"
+            android:text="@string/txt_property_street"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:id="@+id/txtColonSecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/txtColonFirst"
+            android:layout_toRightOf="@+id/txtEmail"
+            android:layout_alignBaseline="@+id/txtEmail"
+            android:text=":"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/txtNationality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txtEmail"
+            android:text="@string/txt_property_address"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:id="@+id/txtColonThird"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/txtColonSecond"
+            android:layout_toRightOf="@+id/txtNationality"
+            android:layout_alignBaseline="@+id/txtNationality"
+            android:text=":"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:id="@+id/txtpropertyaddressValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtColonFirst"
+            android:layout_alignBaseline="@+id/txtColonThird"
+            android:text="saaasdasdasfsad"
+            android:layout_marginLeft="20dp"
+            style="@style/autoscrollText"
+
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/txtpropertystreetValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtColonFirst"
+            style="@style/autoscrollText"
+            android:text="saaasdasdasfsad"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/txtColonSecond"
+            android:layout_alignBottom="@+id/txtColonSecond"
+            android:layout_alignStart="@+id/txtpropertyblockValuenw" />
+    </RelativeLayout>-->
+    </LinearLayout>
+</LinearLayout>

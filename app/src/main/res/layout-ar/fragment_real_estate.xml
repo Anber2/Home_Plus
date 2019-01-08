@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/btn_yellow_bg"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/txtNoData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/txt_no_data"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/linearhide"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/white"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:id="@+id/linearRealEstateToLay"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="3dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="true"
+        android:background="@color/btn_yellow_bg"
+        android:orientation="horizontal">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1">
+            <EditText
+                android:id="@+id/etSearch"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:hint="@string/hint_txt_search"
+                android:textSize="14sp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:gravity="right|center_vertical"
+                android:paddingRight="10dp"
+                android:paddingLeft="32dp"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:textColorHint="@android:color/black"
+                android:layout_gravity="top"
+
+                android:background="@drawable/search_bg"
+                android:textDirection="rtl"/>
+            <ImageButton
+                android:id="@+id/imgBtnSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/search_icon"
+                android:rotation="360"/>
+        </FrameLayout>
+        <Button
+            android:id="@+id/btnAdvanceSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/btn_txt_advance_search"
+            android:textColor="@android:color/black"
+            android:textSize="11sp"
+            android:background="@drawable/selector_advance_search"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearhide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearRealEstateToLay"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/viewtwo"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/txt_subtotal"
+            android:background="@android:color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+           >
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/spinnerSelectPurpose"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="8dp"
+                    android:paddingRight="15dp"
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:background="@drawable/selector_realestate_spinner_ar" />
+
+                <TextView
+                    android:id="@+id/realestatepropertyspace"
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/txt_property_space_ar"
+                    android:gravity="right"
+                    android:textDirection="rtl"
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+
+                    android:weightSum="2">
+
+                    <Spinner
+                        android:id="@+id/spinnerSelectTo"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                        android:paddingLeft="15dp"
+                        android:background="@drawable/selector_realestate_spinner_ar" />
+                    <Spinner
+                        android:id="@+id/spinnerSelectFrom"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                        android:paddingLeft="15dp"
+                        android:background="@drawable/selector_realestate_spinner_ar" />
+
+
+
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/realestatepropertypickrange"
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/Hp_pickrange"
+                    android:gravity="right"
+                    android:textDirection="rtl"
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    android:weightSum="2">
+
+                    <Spinner
+                        android:id="@+id/spinnerSelectPickrangeTo"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="15dp"
+                        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                        android:background="@drawable/selector_realestate_spinner_ar" />
+
+                    <Spinner
+                        android:id="@+id/spinnerSelectPickrangeFrom"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                        android:paddingLeft="15dp"
+                        android:background="@drawable/selector_realestate_spinner_ar" />
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/spinnerSelectRegion"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="8dp"
+                    android:paddingRight="15dp"
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:background="@drawable/selector_realestate_spinner_ar" />
+
+                <Spinner
+                    android:id="@+id/spinnerSelectPropertyType"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:paddingRight="15dp"
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:background="@drawable/selector_realestate_spinner_ar" />
+
+                <Spinner
+                    android:id="@+id/spinnerSelectStreetlocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:paddingRight="15dp"
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:background="@drawable/selector_realestate_spinner_ar" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycViewRealEstate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearhide"
+        android:background="@android:color/white"
+        />
+</RelativeLayout>

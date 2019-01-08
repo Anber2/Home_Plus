@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center|center_vertical"
+        android:background="@color/btn_yellow_bg">
+        <TextView
+            android:id="@+id/head_request_property"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/txt_request_property_service"
+            android:textAllCaps="true"
+
+            android:textSize="18sp"
+            android:textColor="@android:color/black"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt_filltheform"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+
+                android:text="@string/txt_fill_form"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/txtSelectRegion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+
+                android:text="@string/txt_select_region"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"/>
+            <Spinner
+                android:id="@+id/spinnerSelectRegion"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+
+                android:layout_marginTop="5dp"
+
+                android:background="@drawable/drop_down_silver_border_shape"/>
+            <TextView
+                android:id="@+id/txtSelectPurpose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+
+                android:text="@string/txt_select_purpose"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"/>
+            <Spinner
+                android:id="@+id/spinnerSelectPurpose"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+
+                android:layout_marginTop="5dp"
+
+                android:background="@drawable/drop_down_silver_border_shape"/>
+            <TextView
+                android:id="@+id/txtSelectPropertyType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+
+                android:text="@string/txt_select_property_type"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"/>
+            <Spinner
+                android:id="@+id/spinnerSelectPropertyType"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+
+                android:layout_marginTop="5dp"
+
+                android:background="@drawable/drop_down_silver_border_shape"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight=".5"
+                    android:text="@string/btn_txt_submit"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@drawable/selector_profile_txt"
+                    android:background="@drawable/selector_addtocart_btn"/>
+                <Button
+                    android:id="@+id/btnReset"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight=".5"
+                    android:text="@string/btn_txt_reset"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@drawable/selector_profile_txt"
+                    android:background="@drawable/selector_addtocart_btn"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

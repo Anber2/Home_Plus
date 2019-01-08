@@ -1,0 +1,87 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+    <style name="dialogueAnim">
+        <item name="android:windowEnterAnimation">@anim/right_to_left</item>
+        <item name="android:windowExitAnimation">@anim/left_to_right</item>
+    </style>
+    <style name="dialogueAnim_Ar">
+        <item name="android:windowEnterAnimation">@anim/left_to_right_ar</item>
+        <item name="android:windowExitAnimation">@anim/right_to_left_ar</item>
+    </style>
+    <!--spinner_wait-->
+    <style name="wait_spinner_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <!--Auto Scroll -->
+    <style name="autoscrollText">
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+    <style name="autoscrollText_viewpager">
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+
+    </style>
+
+
+    <style name="DialogFragment"  parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <style name="TextAppearance.FontPath.neosansararabic" parent="android:TextAppearance">
+        <!-- Custom Attr-->
+        <item name="fontPath">fonts/NEOSANSARABIC.TTF</item>
+    </style>
+
+    <style name="TextAppearance.FontPath.segoeuib" parent="android:TextAppearance">
+        <!-- Custom Attr-->
+        <item name="fontPath">fonts/SEGOEUI.TTF</item>
+    </style>
+
+    <!-- Rating Bar Style -->
+   <!-- <style name="RatingBar"
+        parent="android:style/Widget.Material.RatingBar.Small">
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="colorControlActivated">@color/rate_bar_activated_bg</item>
+    </style>-->
+
+    <!--<style name="CustomRatingBar" parent="android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/rating_bar</item>
+        <item name="android:minHeight">18dp</item>
+        <item name="android:maxHeight">18dp</item>
+    </style>-->
+</resources>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayTopInConstn"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/btn_yellow_bg"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+
+            android:background="@drawable/curved_large_bg"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/btnTabCorporate"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight=".5"
+                android:background="@drawable/button_curved_yellow"
+                android:text="@string/btn_txt_corporate" />
+
+            <Button
+                android:id="@+id/btnTabIndividual"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight=".5"
+                android:background="@drawable/button_curved_yellow"
+                android:text="@string/btn_txt_individual"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/linearLaySearchInIndividual"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/etSearchInConstnIndividual"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/search_bg"
+            android:ellipsize="end"
+            android:gravity="left|center_vertical"
+            android:hint="@string/hint_txt_search"
+            android:imeOptions="actionSearch"
+            android:paddingBottom="7dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp"
+            android:paddingTop="7dp"
+            android:singleLine="true"
+            android:textColorHint="@android:color/black"
+            android:textDirection="ltr"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/imgBtnSearch_construction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+
+            android:layout_marginRight="25dp"
+            android:background="@drawable/search_icon"
+            android:rotation="360"
+            android:scaleType="fitCenter" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayFilterSearchInCorporate"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+
+        <FrameLayout
+            android:id="@+id/linearLaySearchIn"
+            android:layout_width="0dp"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_weight=".5"
+            android:background="@android:color/white"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/etSearchConstnCorporate"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/search_bg"
+                android:gravity="left|center_vertical"
+                android:hint="@string/hint_txt_search"
+                android:imeOptions="actionSearch"
+                android:paddingBottom="7dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="7dp"
+                android:singleLine="true"
+                android:textColorHint="@android:color/black"
+                android:textDirection="ltr"
+                android:textSize="14sp" />
+
+            <ImageButton
+                android:id="@+id/imgBtnSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="18dp"
+                android:background="@drawable/search_icon"
+                android:rotation="360"
+                android:scaleType="fitCenter" />
+        </FrameLayout>
+
+        <Spinner
+            android:id="@+id/spinnerLocation"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight=".5"
+            android:background="@drawable/drop_down_shape"
+            android:paddingRight="8dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLaySortInCorporate"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <Spinner
+            android:id="@+id/spinnerSort"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.40"
+            android:background="@drawable/drop_down_silver_border_shape"
+            android:paddingRight="8dp" />
+
+        <TextView
+            android:id="@+id/txtResultCount"
+            style="@style/autoscrollText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".30"
+            android:gravity="center|center_vertical"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/light_red_color"
+            android:textDirection="ltr" />
+
+        <TextView
+            android:id="@+id/txtRealEstateType"
+            style="@style/autoscrollText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight=".20"
+            android:gravity="right"
+            android:paddingRight="10dip"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp">
+
+        <View
+            android:id="@+id/viewDividerInCorporateTop"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/silver_color"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtNoData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/txt_no_data"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycViewConstruction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycViewConstruction2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recycViewConstruction" />
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

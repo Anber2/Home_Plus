@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "238211616862",
+    "firebase_url": "https://home-plus-jordan.firebaseio.com",
+    "project_id": "home-plus-jordan",
+    "storage_bucket": "home-plus-jordan.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:238211616862:android:ca1d4106ca870c7e",
+        "android_client_info": {
+          "package_name": "com.mawaqaa.homepluskw_new"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "238211616862-oa8s7jpgcqamrojoeeui2nei1tbgtvuj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0MtX2yoaDQIU0m3oBBzHTFCywfkaroos"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

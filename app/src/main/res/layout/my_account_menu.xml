@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/white_color__three_side_border"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="@string/txt_menu_header"
+            android:textAllCaps="true"
+            android:textColor="@color/drawer_menu_header_txt_color"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/white" />
+
+        <RelativeLayout
+            android:id="@+id/rl_language"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <ImageView
+                android:id="@+id/imgViewMenuIconItemOne"
+                android:layout_width="38dp"
+                android:layout_centerVertical="true"
+                android:layout_height="38dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/menu_1" />
+
+            <TextView
+                android:id="@+id/txtMenuItemOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/imgViewMenuIconItemOne"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/imgViewMenuIconItemOne"
+                android:text="@string/language"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/white" />
+
+        <RelativeLayout
+            android:id="@+id/rl_about_us"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <ImageView
+                android:id="@+id/imgViewMenuIconItemTwo"
+                android:layout_width="38dp"
+                android:layout_centerVertical="true"
+                android:layout_height="38dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/menu_2" />
+
+            <TextView
+                android:id="@+id/txtMenuItemTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/imgViewMenuIconItemTwo"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/imgViewMenuIconItemTwo"
+                android:text="@string/about_us"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/white" />
+
+        <RelativeLayout
+            android:id="@+id/rl_my_account"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <ImageView
+                android:id="@+id/imgViewMenuIconItemThree"
+                android:layout_width="38dp"
+                android:layout_centerVertical="true"
+                android:layout_height="38dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/menu_3" />
+
+            <TextView
+                android:id="@+id/txtMenuItemThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/imgViewMenuIconItemThree"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/imgViewMenuIconItemThree"
+                android:text="@string/my_account"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/white" />
+
+        <RelativeLayout
+            android:id="@+id/rl_media_center"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <ImageView
+                android:id="@+id/imgViewMenuIconItemFour"
+                android:layout_width="38dp"
+                android:layout_centerVertical="true"
+                android:layout_height="38dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/menu_4" />
+
+            <TextView
+                android:id="@+id/txtMenuItemFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/imgViewMenuIconItemFour"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/imgViewMenuIconItemFour"
+                android:text="@string/media_center"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/white" />
+
+        <RelativeLayout
+            android:id="@+id/rl_social_media"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <ImageView
+                android:id="@+id/imgViewMenuIconItemFive"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/menu_5" />
+
+            <TextView
+                android:id="@+id/txtMenuItemFive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/imgViewMenuIconItemFive"
+
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/imgViewMenuIconItemFive"
+                android:text="@string/social_media"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/white" />
+
+        <RelativeLayout
+            android:id="@+id/rl_contact_us"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <ImageView
+                android:id="@+id/imgViewMenuIconItemSix"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/menu_6" />
+
+            <TextView
+                android:id="@+id/txtMenuItemSix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/imgViewMenuIconItemSix"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/imgViewMenuIconItemSix"
+                android:text="@string/contact_us"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_pop_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:background="@android:color/transparent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:orientation="vertical"
+        android:background="@drawable/dialog_fragment_bg">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingLeft="10dp"
+                android:text="@string/txt_owner_details"
+
+                android:textSize="16dp"
+                android:textColor="@android:color/black"/>
+            <Button
+                android:id="@+id/btnCloseInDialog"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:text="X"
+                android:textColor="#FFF"
+                android:background="@drawable/close_button"
+                android:layout_gravity="end|right"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_margin="5dp"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+       <!-- <Button
+            android:id="@+id/btnCloseInDialog"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:text="X"
+            android:textColor="#FFF"
+            android:background="@drawable/close_button"
+            android:layout_gravity="end|right"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_margin="5dp"
+            android:textSize="14sp"
+            android:textStyle="bold"/>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/relativeOwnerDetailsLay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingBottom="10dp">
+                <TextView
+                    android:id="@+id/txtOwnerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/txt_owner_name"
+
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"/>
+                <TextView
+                    android:id="@+id/txtOwnerNameValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/txtOwnerName"
+                    android:layout_alignBaseline="@+id/txtOwnerName"
+                    android:paddingLeft="10dp"
+
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"
+                    style="@style/autoscrollText"/>
+
+                <TextView
+                    android:id="@+id/txtOwnerEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/txtOwnerName"
+                    android:layout_marginTop="10dp"
+
+                    android:text="@string/txt_company_email"
+
+
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"/>
+                <TextView
+                    android:id="@+id/txtOwnerEmailValuenew"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtOwnerName"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/txtOwnerEmail"
+                    android:layout_alignBaseline="@+id/txtOwnerEmail"
+                    android:paddingLeft="10dp"
+                    android:inputType="textEmailAddress"
+                    android:autoLink="email"
+
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"
+                    style="@style/autoscrollText"/>
+
+                <TextView
+                    android:id="@+id/txtOwnerPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/txtOwnerEmail"
+                    android:layout_marginTop="10dp"
+
+                    android:text="@string/txt_company_phone_number"
+
+
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"/>
+                <TextView
+                    android:id="@+id/txtOwnerPhoneValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtOwnerEmail"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/txtOwnerPhone"
+                    android:layout_alignBaseline="@+id/txtOwnerPhone"
+                    android:paddingLeft="10dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/blue_linkify"
+                    style="@style/autoscrollText"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/linearPropertyAddressLay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/txtAddressLine1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"
+                    android:maxLines="4"/>
+                <!--<TextView
+                    android:id="@+id/txtAddressLine2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"/>
+                <TextView
+                    android:id="@+id/txtAddressLine3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"/>-->
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

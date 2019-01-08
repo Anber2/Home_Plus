@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item >
+        <shape  android:shape="rectangle">
+            <size android:height="500dp" android:width="100dp"></size>
+            <solid android:color="@android:color/black"></solid>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <size
+                android:width="250dp"
+                android:height="250dp" />
+            <solid android:color="@android:color/white" />
+            <stroke
+                android:width="8dp"
+                android:color="@color/back_button_color_yellow" />
+        </shape>
+    </item>
+
+</layer-list>

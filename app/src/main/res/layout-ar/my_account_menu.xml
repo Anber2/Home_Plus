@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/white_color_three_side_border_ar"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="@string/txt_menu_header"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.FontPath.neosansararabic"
+            android:textColor="@color/drawer_menu_header_txt_color"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/white" />
+
+        <RelativeLayout
+            android:id="@+id/rl_language"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <ImageView
+                android:id="@+id/imgViewMenuIconItemOne"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/menu_1" />
+
+            <TextView
+                android:id="@+id/txtMenuItemOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/imgViewMenuIconItemOne"
+
+                android:layout_centerInParent="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/imgViewMenuIconItemOne"
+                android:text="@string/language"
+                android:textAppearance="@style/TextAppearance.FontPath.neosansararabic"
+                android:textColor="@android:color/white"
+                android:textDirection="rtl" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/white" />
+
+        <RelativeLayout
+            android:id="@+id/rl_about_us"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <ImageView
+                android:id="@+id/imgViewMenuIconItemTwo"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/menu_2" />
+
+            <TextView
+                android:id="@+id/txtMenuItemTwo"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/imgViewMenuIconItemTwo"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/imgViewMenuIconItemTwo"
+                android:text="@string/about_us"
+                android:textAppearance="@style/TextAppearance.FontPath.neosansararabic"
+                android:textColor="@android:color/white"
+                android:textDirection="rtl" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/white" />
+
+        <RelativeLayout
+            android:id="@+id/rl_my_account"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <ImageView
+                android:id="@+id/imgViewMenuIconItemThree"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/menu_3" />
+
+            <TextView
+                android:id="@+id/txtMenuItemThree"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/imgViewMenuIconItemThree"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/imgViewMenuIconItemThree"
+                android:text="@string/my_account"
+                android:textAppearance="@style/TextAppearance.FontPath.neosansararabic"
+                android:textColor="@android:color/white"
+                android:textDirection="rtl" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/white" />
+
+        <RelativeLayout
+            android:id="@+id/rl_media_center"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <ImageView
+                android:id="@+id/imgViewMenuIconItemFour"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/menu_4" />
+
+            <TextView
+                android:id="@+id/txtMenuItemFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignBaseline="@+id/imgViewMenuIconItemFour"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/imgViewMenuIconItemFour"
+                android:text="@string/media_center"
+                android:textAppearance="@style/TextAppearance.FontPath.neosansararabic"
+                android:textColor="@android:color/white"
+                android:textDirection="rtl" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/white" />
+
+        <RelativeLayout
+            android:id="@+id/rl_social_media"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <ImageView
+                android:id="@+id/imgViewMenuIconItemFive"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/menu_5" />
+
+            <TextView
+                android:id="@+id/txtMenuItemFive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/imgViewMenuIconItemFive"
+                android:layout_centerInParent="true"
+
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/imgViewMenuIconItemFive"
+                android:text="@string/social_media"
+                android:textAppearance="@style/TextAppearance.FontPath.neosansararabic"
+                android:textColor="@android:color/white"
+                android:textDirection="rtl" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/white" />
+
+        <RelativeLayout
+            android:id="@+id/rl_contact_us"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <ImageView
+                android:id="@+id/imgViewMenuIconItemSix"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/menu_6" />
+
+            <TextView
+                android:id="@+id/txtMenuItemSix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/imgViewMenuIconItemSix"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/imgViewMenuIconItemSix"
+
+                android:text="@string/contact_us"
+                android:textAppearance="@style/TextAppearance.FontPath.neosansararabic"
+                android:textColor="@android:color/white"
+                android:textDirection="rtl" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

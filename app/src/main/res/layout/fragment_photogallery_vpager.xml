@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.44">
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPagerphotoGallery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"/>
+            <com.mawaqaa.homepluskw_new.views.CirclePageIndicator
+                android:id="@+id/circleIndicator"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="bottom"
+                app:snap="false"
+                android:padding="10dip"
+                app:fillColor="@color/txt_yellow_color"
+                app:pageColor="@color/trasperant_white"
+                app:strokeColor="@color/trasperant_white"
+                app:strokeWidth="2dp"
+                app:radius="10dp"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

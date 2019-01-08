@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="280dp" >
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/recyViewRealEstateOffer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/card_border"/>
+                <com.mawaqaa.homepluskw_new.views.CirclePageIndicator
+                    android:id="@+id/circleIndicator"
+                    android:layout_width="fill_parent"
+                    android:layout_marginBottom="8dp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="bottom"
+                    app:snap="false"
+                    android:visibility="gone"
+                    android:padding="10dip"
+                    app:fillColor="@color/txt_yellow_color"
+                    app:pageColor="@color/trasperant_white"
+                    app:strokeColor="@color/trasperant_white"
+                    app:strokeWidth="2dp"
+                    app:radius="6dp"/>
+
+            </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/rllayoutspecialoffer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_border"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:padding="5dp"
+                android:visibility="gone"
+                android:layout_marginTop="10dp">
+                <ImageView
+                    android:id="@+id/specialofferimagetwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:scaleType="fitXY"
+android:src="@drawable/loading"
+
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:id="@+id/ll_date"
+                    android:layout_below="@id/specialofferimagetwo"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".60"
+                        android:background="@color/btn_yellow_bg_transperant"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtTitlespoffer"
+                            style="@style/autoscrollText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+
+                            android:textAllCaps="true"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".40"
+                        android:background="@color/transperant_black"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/txtDatespoffer"
+                            style="@style/autoscrollText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+
+                            android:textAllCaps="true"
+                            android:textDirection="rtl"
+                            android:textColor="@color/txt_yellow_color"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/layouttop_spoffer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:layout_below="@+id/ll_date"
+                    android:background="@android:color/black">
+                    <LinearLayout
+                        android:id="@+id/linearllout_spoffer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:padding="10dp"
+
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/spoffertwo"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                style="@style/autoscrollText"
+                                android:paddingBottom="10dp"
+                                android:textDirection="rtl"
+                                android:textColor="@android:color/white"/>
+
+
+                            <TextView
+                                android:id="@+id/spofferone"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                style="@style/autoscrollText"
+                                android:textDirection="rtl"
+                                android:paddingBottom="10dp"
+                                android:textColor="@android:color/white"/>
+
+
+                            </LinearLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/lineralloutthird"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+                        <TextView
+                            android:id="@+id/spofferfour"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="dsfsfdggfdgfgf"
+                            android:gravity="center"
+                            android:textSize="14sp"
+                            android:textDirection="rtl"
+                            style="@style/autoscrollText"
+                            android:textColor="@android:color/white"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycViewContrctnOffer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+
+               />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

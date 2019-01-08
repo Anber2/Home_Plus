@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="back_button_color_yellow">#FFEA00</color>
+    <color name="txt_yellow_color">#FFEA00</color>
+    <color name="btn_yellow_bg">#FFEA00</color>
+    <color name="drawer_divider_bg">#F9F9F9</color>
+    <color name="drawer_menu_header_txt_color">#FFEA00</color>
+    <color name="txt_grey_color">#777777</color>
+    <color name="bg_color_dark_white">#F7F7F7</color>
+    <color name="txt_color_grey">#515151</color>
+    <color name="txt_color_dark_grey">#353535</color>
+    <color name="bg_cadet_grey">#909AB3</color>
+    <color name="bg_grey">#a19f9f</color>
+    <color name="silver_color">#E6E6E6</color>
+    <color name="light_red_color">#FE704E</color>
+    <color name="red_txt_color">#C62C36</color>
+    <color name="grey_bar">#90323230</color>
+    <color name="dark_white_bg">#85F7F7F7</color>
+    <color name="rate_bar_activated_bg">#FEEA00</color>
+    <color name="dark_yellow_txt_color">#CFCB40</color>
+    <color name="bg_color_red">#EE2C2C</color>
+    <color name="bg_constuction">#E7E7E7</color>
+    <color name="btn_yellow_bg_transperant">#FFEA00</color>
+    <color name="transperant_black">#80060606</color>
+    <color name="txt_color_realestate_dark_grey">#ccffffff</color>
+    <color name="trasperant_white">#40ffffff</color>
+    <color name="green_linkify">#ff009688</color>
+    <color name="blue_linkify">#392ae2</color>
+
+</resources>

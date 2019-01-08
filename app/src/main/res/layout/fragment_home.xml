@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+
+    <ImageView
+        android:id="@+id/icon1"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="12dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/home_small_logo" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="6dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/iconlogo"
+            android:orientation="horizontal"
+
+
+            android:weightSum="2">
+
+
+            <ImageButton
+                android:id="@+id/btnConstructionInHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+
+                android:background="@drawable/constuctionservice_en" />
+
+            <ImageButton
+                android:id="@+id/btnRealEstateInHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/realestatetwo" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnReqProptyService"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/selector_request_prop_btn"
+            android:text="@string/btn_txt_request_property_service"
+            android:textAllCaps="true"
+            android:layout_marginTop="10dp"
+            android:textColor="@drawable/selector_request_prop_txt"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="325dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <!-- <ImageView
+             android:id="@+id/iconlogo1"
+             android:layout_width="250dp"
+             android:layout_height="250dp"
+             android:layout_marginTop="8dp"
+             android:layout_gravity="center_horizontal"
+             android:src="@drawable/home_small_logo"/>-->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/recyViewRealEstateOffer"
+            android:layout_width="230dp"
+            android:layout_height="230dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp" />
+
+        <ImageView
+            android:id="@+id/iconlogo"
+            android:layout_width="match_parent"
+            android:layout_height="310dp"
+            android:layout_above="@+id/ll_bottom"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/home_img" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="36dp"
+            android:gravity="center"
+            android:background="@android:color/transparent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textSwitcher"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textAllCaps="true"
+                android:textSize="14sp"
+                android:textColor="@android:color/white"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:scrollHorizontally="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:maxLines="1"
+                style="@style/autoscrollText"
+                android:singleLine="true"
+                android:freezesText="true"
+                android:selectAllOnFocus="true"/>
+            <TextView
+                android:id="@+id/textSwitcher2"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textAllCaps="true"
+                android:textSize="14sp"
+                style="@style/autoscrollText"
+                android:textColor="@android:color/white"/>
+
+<!-- <TextView
+                android:id="@+id/textSwitcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textAllCaps="true"
+                android:textSize="14sp"
+                style="@style/autoscrollText"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@android:color/white"/>
+            <TextView
+                android:id="@+id/textSwitcher2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textAllCaps="true"
+                android:textSize="14sp"
+                style="@style/autoscrollText"
+                android:textColor="@android:color/white"/>-->
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</RelativeLayout>

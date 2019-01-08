@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- <FrameLayout
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_weight="1.6"
+             android:layout_marginTop="45dp"
+             android:layout_marginLeft="20dp"
+             android:layout_marginRight="20dp"
+             android:background="@android:color/white">-->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPagerAdvertisementad"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true" />
+        <!--  </FrameLayout>-->
+        <!-- <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_weight=".20"
+             android:layout_marginTop="10dp"
+             android:layout_marginLeft="15dp"
+             android:layout_marginRight="15dp">-->
+
+        <com.mawaqaa.homepluskw_new.views.CirclePageIndicator
+            android:id="@+id/circleIndicatorad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="64dp"
+            android:padding="10dip"
+            android:visibility="gone"
+            app:fillColor="@color/txt_yellow_color"
+            app:pageColor="@android:color/white"
+            app:radius="6dp"
+            app:snap="false"
+            app:strokeColor="@android:color/white"
+            app:strokeWidth="2dp" />
+        <!--   </LinearLayout>-->
+        <!-- <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_weight=".20"
+             android:layout_marginLeft="15dp"
+             android:layout_marginRight="15dp">-->
+        <ImageView
+            android:id="@+id/txtSkipad"
+            android:layout_width="84dp"
+            android:layout_height="38dp"
+            android:layout_alignBottom="@+id/viewPagerAdvertisementad"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/skiphomear"
+
+            android:clickable="true" />
+        <!-- </RelativeLayout>-->
+    </RelativeLayout>
+
+</LinearLayout>

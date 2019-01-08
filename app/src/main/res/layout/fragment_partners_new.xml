@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayTopInConstn"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/btn_yellow_bg"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:weightSum="1"
+            android:gravity="center_vertical"
+            android:background="@drawable/curved_large_bg">
+
+            <Button
+                android:id="@+id/btnCorporateview"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:text="@string/btn_txt_coroperateoverview"
+
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@android:color/black"
+                android:background="@drawable/button_curved_yellow"/>
+
+            <Button
+                android:id="@+id/btnTabPartners"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:text="@string/btn_txt_partners"
+                android:background="@drawable/button_curved_yellow"  />
+        </LinearLayout>
+    </LinearLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/lnpartner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical">
+
+
+        <WebView
+            android:id="@+id/webView_partners"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
+        <!-- <TextView
+             android:id="@+id/tv_ourpartners"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+
+             android:layout_marginBottom="8dp"
+             android:layout_marginLeft="8dp"
+             android:text="Our Partners"
+             android:textColor="@color/dark_yellow_txt_color"
+             android:textSize="16sp" />-->
+
+        <FrameLayout
+            android:id="@+id/framel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/webView_partners"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/tv_ourpartners"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:gravity="center_horizontal"
+                android:text="@string/txt_our_patner"
+                android:visibility="gone"
+                android:textColor="@color/dark_yellow_txt_color"
+                android:textSize="16sp" />
+
+
+          <!--  <com.meetme.android.horizontallistview.HorizontalListView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:widget="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/HorizontalListView"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/webView_partners"
+                android:gravity="center_vertical"
+                android:paddingTop="2dp"
+                android:layout_marginLeft="5dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="36dp"
+                android:divider="@android:color/transparent"
+
+                widget:dividerWidth="2dp" />-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="5dp"
+                >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewPagerpartner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    />
+
+
+
+                <!--android:background="@drawable/squre_silver_border"-->
+
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/imgbtn_right_partner"
+                android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_gravity="center_vertical|end"
+                android:background="@drawable/smarrowright" />
+
+
+            <ImageButton
+                android:id="@+id/imgbtn_left_partner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/smarrowleft"
+                android:visibility="gone"
+                android:paddingRight="8dp" />
+
+        </FrameLayout>
+    </RelativeLayout>
+
+</ScrollView>
+</LinearLayout>

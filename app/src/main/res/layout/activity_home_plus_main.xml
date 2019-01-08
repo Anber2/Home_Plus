@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".activity.HomePlusMainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/black"
+        app:contentInsetEnd="0dp"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/imgBtnBack"
+                android:layout_width="35dp"
+                android:layout_height="25dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/back_button_shape" />
+
+            <TextView
+                android:id="@+id/txtInActionBarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:text="About Us"
+                android:textColor="@color/back_button_color_yellow"
+                android:textSize="22sp" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/LinearBottomBarLay"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/black"
+        android:gravity="center_vertical"
+
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <ImageButton
+            android:id="@+id/imgBtnHome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@drawable/home_btn"
+            android:scaleType="fitXY" />
+
+        <ImageButton
+            android:id="@+id/imgBtnRealEstate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@drawable/real_estate_btn"
+            android:scaleType="fitXY" />
+
+        <ImageButton
+            android:id="@+id/imgBtnPropertyService"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/propert_service_btn" />
+
+        <ImageButton
+            android:id="@+id/imgBtnConstruction"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@drawable/construction_btn"
+            android:scaleType="fitXY" />
+
+        <ImageButton
+            android:id="@+id/imgBtnMore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/more_btn" />
+    </LinearLayout>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/LinearBottomBarLay"
+        android:layout_below="@+id/toolbarActionBar">
+
+        <RelativeLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/LinearBottomBarLay"
+            android:layout_below="@+id/toolbarActionBar" />
+
+
+        <ListView
+            android:id="@+id/mDrawerList"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:background="@drawable/white_color__three_side_border"
+            android:choiceMode="singleChoice"
+            android:divider="@color/drawer_divider_bg"
+            android:dividerHeight="1.25dp"
+            android:fadeScrollbars="false"
+            android:scrollIndicators="top"
+            android:scrollbarThumbVertical="@drawable/custom_scroll_style" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLaySubMenuPopUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180dp"
+            android:gravity="bottom"
+            android:src="@drawable/menu_bg"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imgviewFb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@android:drawable/btn_star_big_off" />
+
+            <ImageView
+                android:id="@+id/imgviewTwitter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/imgviewFb"
+                android:src="@android:drawable/btn_star_big_off" />
+
+            <ImageView
+                android:id="@+id/imgviewLinkedIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgviewFb"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@android:drawable/btn_star_big_off" />
+
+            <ImageView
+                android:id="@+id/imgviewInstagram"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgviewTwitter"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/imgviewLinkedIn"
+                android:src="@android:drawable/btn_star_big_off" />
+        </RelativeLayout>
+
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>

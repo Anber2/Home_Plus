@@ -1,0 +1,14 @@
+JvmtiExport can_access_local_variables 0
+JvmtiExport can_hotswap_or_post_breakpoint 0
+JvmtiExport can_post_on_exceptions 0
+# 181 ciObject found
+ciMethod java/lang/Object <init> ()V 4097 1 6829 0 -1
+ciMethod java/lang/String <init> ([CII)V 3393 1 2889 0 -1
+ciMethod java/lang/AbstractStringBuilder <init> (I)V 1177 1 755 0 -1
+ciMethod java/lang/AbstractStringBuilder append (Ljava/lang/String;)Ljava/lang/AbstractStringBuilder; 2193 1 1630 0 -1
+ciMethod java/lang/StringBuilder <init> ()V 849 1 528 0 -1
+ciMethod java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder; 1905 1 1039 0 -1
+ciMethod java/lang/StringBuilder toString ()Ljava/lang/String; 937 1 541 0 -1
+ciMethodData java/lang/Object <init> ()V 2 6830 orig 144 104 11 105 110 0 0 0 0 136 4 136 20 0 0 0 0 168 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 113 197 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 3 0 3 0 0 0 0 0 0 0 255 255 255 255 0 0 0 0 0 0 0 0 0 0 0 0 data 0 oops 0
+ciMethod java/util/BitSet set (I)V 1385 1 171 0 -1
+ciMethodData java/lang/AbstractStringBuilder append (Ljava/lang/String;)Ljava/lang/AbstractStringBuilder; 2 1630 orig 144 104 11 105 110 0 0 0 0 24 15 143 20 0 0 0 0 80 1 0 0 32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18 1 0 0 97 42 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 9 0 3 0 1 0 160 0 0 0 255 255 255 255 0 0 0 0 7 0 1 0 0 0 0 0 data 20 0x10007 0x54c 0x30 0x0 0x50002 0x0 0xa0005 0x0 0x272cba0 0x54c 0x0 0x0 0x150002 0x54c 0x230005 0x0 0x272cba0 0x54c 0x0 0x0 oops 2

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_prop"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:orientation="vertical"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/dialog_fragment_bg">>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnCloseInDialog"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:text="X"
+                android:textColor="#FFF"
+                android:background="@drawable/close_button"
+                android:layout_gravity="start|left"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_margin="5dp"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/txt_property_Address"
+
+                android:textSize="16dp"
+                android:paddingRight="20dp"
+                android:textAppearance="@style/TextAppearance.FontPath.neosansararabic"
+                android:textColor="@android:color/black"/>
+
+        </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:padding="10dp"
+           android:orientation="vertical">
+           <RelativeLayout
+               android:id="@+id/relativeOwnerDetailsLay"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:paddingRight="10dp"
+               android:paddingBottom="10dp">
+
+               <TextView
+                   android:id="@+id/txtRegion"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/dialog_region"
+                   android:layout_alignParentRight="true"
+                   android:gravity="right"
+                   android:textAppearance="@style/TextAppearance.FontPath.neosansararabic"
+                   android:textColor="@android:color/black"
+                />
+
+               <TextView
+                   android:id="@+id/txtOwnerNamesemi"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text=" : "
+                   android:layout_toLeftOf="@+id/txtRegion"
+                   android:gravity="right"
+                   android:textAppearance="@style/TextAppearance.FontPath.neosansararabic"
+                   android:textColor="@android:color/black"
+                  />
+               <TextView
+                   android:id="@+id/txtpropertyregionValuenw"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_toLeftOf="@+id/txtOwnerNamesemi"
+                   android:layout_alignBaseline="@+id/txtRegion"
+                   android:paddingRight="6dp"
+                   android:textAppearance="@style/TextAppearance.FontPath.neosansararabic"
+                   android:textColor="@android:color/black"
+                   android:gravity="right"
+                 />
+               <TextView
+                   android:id="@+id/txtblock"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/txt_property_Block"
+                   android:layout_alignParentRight="true"
+                   android:layout_below="@+id/txtRegion"
+                   android:textAppearance="@style/TextAppearance.FontPath.neosansararabic"
+                   android:textColor="@android:color/black"
+                   />
+               <TextView
+                   android:id="@+id/txtOwnerEmailsemii"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text=" : "
+                   android:layout_toLeftOf="@+id/txtblock"
+                   android:layout_alignBaseline="@+id/txtblock"
+                   android:textColor="@android:color/black"
+                   />
+               <TextView
+                   android:id="@+id/txtblockvalue"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_toLeftOf="@+id/txtOwnerEmailsemii"
+                   android:layout_alignBaseline="@+id/txtblock"
+                   android:paddingRight="6dp"
+                   android:textAppearance="@style/TextAppearance.FontPath.neosansararabic"
+                   android:textColor="@android:color/black"
+                   />
+
+
+               <TextView
+                   android:id="@+id/txtEmail"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/property_street"
+                   android:layout_alignParentRight="true"
+                   android:layout_below="@+id/txtblock"
+                   android:textAppearance="@style/TextAppearance.FontPath.neosansararabic"
+                   android:textColor="@android:color/black"
+                 />
+               <TextView
+                   android:id="@+id/txtOwnerEmailsemi"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text=" : "
+                   android:layout_toLeftOf="@+id/txtEmail"
+                   android:layout_alignBaseline="@+id/txtEmail"
+                   android:textColor="@android:color/black"
+                  />
+               <TextView
+                   android:id="@+id/txtpropertystreetValue"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_toLeftOf="@+id/txtOwnerEmailsemi"
+                   android:layout_alignBaseline="@+id/txtEmail"
+                   android:paddingRight="6dp"
+                   android:textAppearance="@style/TextAppearance.FontPath.neosansararabic"
+                   android:textColor="@android:color/black"
+                 />
+
+
+               <TextView
+                   android:id="@+id/txtNationality"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/txt_property_avenue"
+                   android:gravity="right"
+                   android:layout_alignParentRight="true"
+                   android:layout_below="@+id/txtEmail"
+                   android:textAppearance="@style/TextAppearance.FontPath.neosansararabic"
+                   android:textColor="@android:color/black"
+                  />
+               <TextView
+                   android:id="@+id/txtOwnerPhonesemi"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text=" : "
+                   android:layout_toLeftOf="@+id/txtNationality"
+                   android:layout_alignBaseline="@+id/txtNationality"
+                   android:textColor="@android:color/black"
+                 />
+               <TextView
+                   android:id="@+id/txtpropertyaddressValue"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textAppearance="@style/TextAppearance.FontPath.neosansararabic"
+                   android:textColor="@android:color/black"
+                   android:layout_below="@+id/txtEmail"
+                   android:layout_toLeftOf="@+id/txtOwnerPhonesemi"
+                   android:layout_alignBaseline="@+id/txtNationality"
+                   android:paddingRight="6dp"
+
+                  />
+               <TextView
+                   android:id="@+id/txtHouse"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/txt_property_house"
+                   android:gravity="right"
+                   android:layout_alignParentRight="true"
+                   android:layout_below="@+id/txtNationality"
+                   android:textAppearance="@style/TextAppearance.FontPath.neosansararabic"
+                   android:textColor="@android:color/black"
+                   />
+               <TextView
+                   android:id="@+id/txtOwnerPhonesemii"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text=" : "
+                   android:layout_toLeftOf="@+id/txtHouse"
+                   android:layout_alignBaseline="@+id/txtHouse"
+                   android:textColor="@android:color/black"
+                   />
+               <TextView
+                   android:id="@+id/txtpropertyhousevalue"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textAppearance="@style/TextAppearance.FontPath.neosansararabic"
+                   android:textColor="@android:color/black"
+                   android:layout_below="@+id/txtNationality"
+                   android:layout_toLeftOf="@+id/txtHouse"
+                   android:layout_alignBaseline="@+id/txtHouse"
+                   android:paddingRight="6dp"
+
+                   />
+    </RelativeLayout>
+           <!-- <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="left"
+                >
+                <TextView
+                    android:id="@+id/txtHouse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginRight="22dp"
+                    android:text="@string/txt_property_house"
+                    android:textAppearance="@style/TextAppearance.FontPath.segoeuib"
+                    android:textColor="@android:color/black"
+
+                    />
+                <TextView
+                    android:id="@+id/txtpropertyhousevalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.FontPath.segoeuib"
+                    android:gravity="left"
+                    style="@style/autoscrollText"
+                    android:textColor="@android:color/black"
+                    android:layout_above="@+id/txtEmail" />
+
+            </LinearLayout>
+-->
+
+       </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
